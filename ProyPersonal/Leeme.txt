@@ -1,0 +1,55 @@
+# Sadrach Juan Diego Garcia Flores
+# Grupo: 4-2 uth
+# Fecha: 23/10/2024
+
+#Inicio de proyecto personal imitando el juego de buckshot roulette, El juego tratara de que el usuario obtendra una escopeta con un 8 tiros
+#y cada inicio de ronda dara una cantidad randoms de balas falsas y balas reales(Minimo 1 real), el usuario tendra que elegir entre
+#dispararse a si mismo o disparar al oponente, si el usuario se dispara a si mismo podra vivir o morir depende de si es bala falsa o real, 
+#si el usuario decide disparar al oponente tendra la posibilidad de matar al oponente dependiendo si es una bala real o falsa,
+#si el usuario mata al oponente se le restara una vida al oponente (total de 4 vidas), si el usuario muere se le restara a el 1 vida 
+#(total de 4 vidas), el juego terminara cuando uno de los dos llegue a 0 vidas.
+#Al inicio de cada ronda el usuario y oponente tendran diferentes "inventario" (Maximo 3 por ronda y si tiene el inventario lleno no podra tener mas
+#inventario y se perderan los nuevos inventario, Maximo de 8 inventario) cada uno con una habilidad diferente, tendran la posibilidad de usar cualquier item
+#que tenga en su inventario, los inventario seran:
+#-Lupa: vera si la bala siguiente es falsa o real
+#-Cuchillo: podra cortar el Arma y el DañoArma obtendra x2 de daño en el siguinte tiro (solo 1 vez por ronda)
+#-cerveza: Descarta la siguinete bala falsa o real y te dice que bala era
+#-cigarro: obtendra 1 vida
+#-telefono: le dira la posicion de una de las balas falsas o si no tiene balas falsas le dira "estas muerto"
+#-Swaper: podra cambiar las balas falaas por balas reales y las reales por falsas
+#-daga: podra robar un item del oponente y se usara instantaneamente
+#-cambio: revolvera las balas de la escopeta (balas.Shuffle comando de esta cosa)
+#-mas inventario proximamente:
+#El usuario podra usar tantos inventario como quira hasata disparar, una vez que dispare no podra usar mas inventario en ese turno y pasara el turno al
+#oponente, Al iniciar una nueva ronda se dira cuantas balas son falsas y cuantas reales pero no la posicion en la que este en el DañoArma eso sera
+#random.
+
+# cabe recalcar que el juego sera echo en consola al no saber como progranamar en un entorno grafico. 
+
+# En esta version intentare cambiar el codigo para volverlo mas legible y entendible para mi y para los demas, ademas de agregar mas inventario y
+# mejorar la jugabilidad del juego.
+
+# Buckshot Roulette Version 2.1
+# Inicio de codigo
+
+
+La version 1 de buckshot roullete Funcioan la parte donde puede disparar al contrincante y disparase a si mismo 
+No dire nada mas ya que esto lo estoy emepzando en la version 2 eso es lo que implemente enla version 1
+
+La version 2 implementara la funcion de los items cada inicio de partida les dara 3 items tanto al usuario como a pepe
+
+Errores:
+    -Esta version tiene el error de que las variables no se reinician, necesito que las variable de vida, vidaOP, Items, etc.
+    -(SOLUCIONADO)Tengo el error de que El archivo de Items.py no funciona al llevarlo a buckRullV2.py ya que es algo circular 
+     y no puedo hacer eso tendre que volver a colocar los items en el archivo buckRullV2.py
+
+En la version 2.2 estare reaciendo el codigo con clases por sugerencia de alguien
+
+    -Puede servir para otra version donde meta un nuevo modo de juego, da una bala nada mas (Revolver)
+        def Cargar(self):
+        for i in range(8):
+            if i == 0:
+                self.Balas.append("Real")
+            else:
+                self.Balas.append("Falsa")
+        random.shuffle(self.Balas)
