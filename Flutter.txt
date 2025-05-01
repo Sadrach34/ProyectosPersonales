@@ -1,0 +1,154 @@
+### 
+-------------------------------------------------------------------------------------------------
+flutter create <NOMBRE>
+
+
+### para hacer mas facil y no crear ciertas cosas
+-------------------------------------------------------------------------------------------------
+import 'package:flutter/material.dart';
+
+
+
+### SOLO EN VISTAS
+-------------------------------------------------------------------------------------------------
+void main() {
+  runApp(const MyApp());
+}
+
+
+
+
+### Todos deben de tener dos estados, Existen dos estados 0 y 1 StatelessWidget y StatefulWidget
+### StatelessWidget es para que no cambie es un 0
+-------------------------------------------------------------------------------------------------
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+
+
+
+### StatefulWidget son estados que van a estar alerta para cambiar es un 1 son cambios visibles
+### que se vea un cambio de si mismo se basa solo en la vista.
+-------------------------------------------------------------------------------------------------
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+
+
+
+### 
+-------------------------------------------------------------------------------------------------
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo1',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),     <------ Se puede actualizar el color
+        useMaterial3: true,						      hasta con hexadecimal
+        ),
+      home: const MyHomePage(title: 'Flutter Demo Home Page2'),       <------ El titulo obligatorio es st
+    );
+  }
+}
+
+
+
+### NO puede tener valores Nulos
+-------------------------------------------------------------------------------------------------
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+### El metodo build debe de retornarme un widget ((EXAMEN))
+-------------------------------------------------------------------------------------------------
+@override
+  Widget build(BuildContext context) {
+    
+
+
+### El Scaffold 
+-------------------------------------------------------------------------------------------------
+return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------
+
+
+### 
+-------------------------------------------------------------------------------------------------

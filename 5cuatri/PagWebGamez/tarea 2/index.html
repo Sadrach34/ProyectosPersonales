@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="NAME">
+    <meta name="author" content="Sadrach Juan Diego Garcia Flores">
+    <link rel="icon" href="/img/Icono.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Reporte desplegable</title>
+</head>
+<body>
+
+<header>
+    <h1>Reporte de <span>Clientes</span></h1>
+</header>
+
+<main>
+    <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Producto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>Varios</td>
+                        <td>
+                        <button class="expand-btn" onclick="toggleDetails(this)">Ver más</button>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="3">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Teclado</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Mouse</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Maria López</td>
+                <td>Varios</td>
+                <td>
+                    <button class="expand-btn" onclick="toggleDetails(this)">Ver más</button>
+                </td>
+            </tr>
+            <tr class="details-row">
+                <td colspan="3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monitor</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>CPU</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</main>
+
+<footer>
+    <p>Desarrollado por <a href="https://github.com/Sadrach34>">Sadrach Juan Diego Garcia Flores</a></p>
+</footer>
+
+</body>
+</html>

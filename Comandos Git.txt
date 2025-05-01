@@ -1,0 +1,40 @@
+git add .
+sirve para subir todas las modificaciones
+-----------------------------------------------------------------------------------------------------
+
+git commit -m "<MENSAJE>"
+Es el commit que acepta subir
+-----------------------------------------------------------------------------------------------------
+
+git push
+nose hazlo siempre despues de un commit
+-----------------------------------------------------------------------------------------------------
+
+git branch
+Ver las ramas creadas 
+-----------------------------------------------------------------------------------------------------
+
+git branch <NOM_NEW_BRANCH>
+Sirve para crear una nueva rama
+-----------------------------------------------------------------------------------------------------
+
+git checkout <NOM_RAMA>
+cambiar de rama
+-----------------------------------------------------------------------------------------------------
+
+git merge <NOM_RAMA>
+sirve para fusionar una rama a otra tienes que estar en la rama a la que quieres fusionar ejem
+Main*
+Prueba
+colocas el comando y te fusionara prueba a main
+-----------------------------------------------------------------------------------------------------
+
+git branch -m old-name new-name
+Cambia el nombre de la rama
+-----------------------------------------------------------------------------------------------------
+
+git clone <URL_HTTPS>
+Es para clonar un repositorio
+-----------------------------------------------------------------------------------------------------
+
+git

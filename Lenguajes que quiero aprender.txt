@@ -1,0 +1,7 @@
+Lenguajes que quiero aprender
+	* Python
+	* JavaScript
+	* Html
+	* Css
+	* Ruby
+	* Sql
