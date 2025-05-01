@@ -36,9 +36,13 @@ Este repositorio incluye proyectos en diversas áreas como:
 ---
 
 ## 📫 Contacto
+
 Puedes encontrarme en:
+
 GitHub: Sadrach34
+
 LinkedIn: [www.linkedin.com/in/sadrach-juan-diego-garcia-flores-9bb8a8334]
+
 Email: [jdiegodeveloper0805@gmail.com]
 
 ---
